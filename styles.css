@@ -48,7 +48,7 @@ h2:hover{
 img{
     position: absolute;
     width: 270px;
-    height:auto;
+    height:270px;
     left: -100px;
     top: 50vh;
     animation: movement 5s linear infinite;
