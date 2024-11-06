@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    background-color: rgb(14, 14, 14);
+    overflow: hidden;
+}
+
+h2{
+    font-size: 150px;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    transition: color 0.3s ease, transform 0.3s ease; 
+    color: whitesmoke;
+}
+h2:hover{
+    color: rgb(62, 182, 58);
+    transform: rotate(-10deg);
+    
+}
+.title-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0); /* light, semi-transparent color */
+    backdrop-filter: blur(10px); /* creates the blur effect */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* optional shadow for depth */
+}
+.space{
+    font-size: 50px;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0);
+    user-select: none;
+}
+img{
+    position: absolute;
+    width: 270px;
+    left: -100px;
+    top: 50vh;
+    animation: movement 5s linear infinite;
+}
+@keyframes movement {
+
+    0%{
+        top: -300px;
+        left: -300px;
+    }
+    100%{
+        left: 100vw;
+        top: 100vh;
+    }
+}
